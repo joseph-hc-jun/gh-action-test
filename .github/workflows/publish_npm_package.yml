@@ -51,6 +51,6 @@ jobs:
         run: npm run build
 
       - name: Pubilsh npm package
-        run: npm publish --dry-run
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
